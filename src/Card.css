@@ -1,0 +1,55 @@
+.card {
+  margin-right: 10px;
+
+  width: 125px;
+  height: 200px;
+
+  border: 1px solid black;
+  border-radius: 3px;
+
+  background-color: white;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.suit {
+  margin: auto;
+  font-size: 100px;
+}
+
+.suit-Hearts, .suit-Diamonds {
+  color: red;
+}
+
+.suit-Clubs, .suit-Spades {
+  color: black;
+}
+
+.suit-Clubs .suit::after {
+  content: "♣";
+}
+
+.suit-Hearts .suit::after {
+  content: "♥";
+}
+
+.suit-Spades .suit::after {
+  content: "♠";
+}
+
+.suit-Diamonds .suit::after {
+  content: "♦";
+}
+
+.value-top-left {
+  font-weight: bold;
+}
+
+.value-bottom-right {
+  font-weight: bold;
+  position: relative;
+  transform: rotate(180deg);
+}
